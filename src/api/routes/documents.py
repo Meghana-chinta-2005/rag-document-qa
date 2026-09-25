@@ -73,7 +73,7 @@ async def delete_document(doc_id: str, request: Request) -> Dict[str, Any]:
         logger.error("Failed to delete document %s: %s", doc_id, exc)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Deletion failed: {exc}",
+            detail="Document deletion failed.",
         ) from exc
 
     logger.info("Deleted doc_id=%s (%d chunks)", doc_id, chunks_deleted)

@@ -75,7 +75,7 @@ async def _process_upload(file: UploadFile, request: Request) -> UploadResponse:
         logger.error("Upload processing failed for '%s': %s", filename, exc)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=str(exc),
+            detail="Upload processing failed.",
         ) from exc
 
     return UploadResponse(
