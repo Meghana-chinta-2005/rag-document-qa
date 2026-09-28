@@ -397,7 +397,7 @@ All optional. The system runs fully without any keys using local ChromaDB embedd
 
 ## Author
 
-**Mohamed Elkholy** — [GitHub](https://github.com/mohamed-elkholy95)
+**Meghana Chinta** — [GitHub](https://github.com/Meghana-chinta-2005)
 
 ---
 
